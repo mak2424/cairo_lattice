@@ -165,7 +165,7 @@ void mfsys_conf(vector <double> coorm, vector <double> mxmy, double c)
 {
     ofstream fout;
     string filename = "cairo";
-    filename = filename + "_N" + to_string(coorm.size()/2) + "_c" + to_string((int)c) + ".mfsys";
+    filename = filename + "_N" + to_string(coorm.size()/2) + "_C" + to_string((int)c) + ".mfsys";
     fout.open(filename.c_str());
     fout.precision(10);
     
@@ -193,7 +193,7 @@ void Wolfram_Mathematica_File(vector <double> coorm, vector <double> mxmy, doubl
 {
     ofstream fout;
     string filename = "cairo";
-    filename = filename + "_N" + to_string(coorm.size()/2) + "_c" + to_string((int)c) + ".nb";
+    filename = filename + "_N" + to_string(coorm.size()/2) + "_C" + to_string((int)c) + ".nb";
     fout.open(filename.c_str());
     fout.precision(10);
     
